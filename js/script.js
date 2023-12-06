@@ -22,7 +22,7 @@ close.addEventListener('click', ()=>{
 
 let products = null;
 //get data from file json
-fetch('product.json')
+fetch('js/product.json')
 .then(response => response.json())
 .then(data => {
     products = data;
@@ -57,7 +57,8 @@ function addDataToHTML(){
             </div>
             <div class="price">Rp.${product.price}/KG</div>
             <button onclick="addCart(${product.id})">masukan keranjang</button>
-        </div>`;
+        </div>
+        `;
             productHTML.appendChild(newProduct);
         });
     }

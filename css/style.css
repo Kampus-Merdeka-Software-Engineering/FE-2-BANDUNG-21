@@ -620,7 +620,7 @@ object-fit: cover;
 .checkoutLayout{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: 20px;
   padding: 20px;
   
 }
@@ -628,7 +628,7 @@ object-fit: cover;
 .checkoutLayout .right{
   background-color: #ff1493;
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   color: #fff;
 }
 .checkoutLayout .list img{
@@ -662,8 +662,9 @@ object-fit: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  font-size: 20px;
+  margin-top:10px;
+  font-size: 15px;
+  padding: 5px;
   font-weight: bold;
 }
 .checkoutLayout .row div:nth-child(2){
@@ -675,7 +676,7 @@ object-fit: cover;
   height: 40px;
   border: none;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: bold;
   color: #fff;
   background-color: #4949a9;
@@ -687,7 +688,7 @@ object-fit: cover;
 
 .returnCart h1{
   border-top: 1px solid #eee;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .returnCart .list .item img{
   height: 70px;
