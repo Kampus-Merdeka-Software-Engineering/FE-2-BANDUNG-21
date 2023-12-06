@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "name": "Terong",
+        "price": 13300,
+        "image": "images/terong.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 3,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    },{
+        "id": 4,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 5,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },{
+        "id": 6,
+        "name": "Wortel",
+        "price": 14000,
+        "image": "images/wortel.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Terong",
+        "price": 13300,
+        "image": "images/terong.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 9,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 10,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },{
+        "id": 11,
+        "name": "Wortel",
+        "price": 14000,
+        "image": "images/wortel.jpg"
+    },{
+        "id": 12,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    }, {
+        "id": 12,
+        "name": "Terong",
+        "price": 13300,
+        "image": "images/terong.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 24,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    },{
+        "id": 25,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 26,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Terong",
+        "price": 13300,
+        "image": "images/terong.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 29,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 30,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },{
+        "id": 31,
+        "name": "Wortel",
+        "price": 14000,
+        "image": "images/wortel.jpg"
+    },{
+        "id": 32,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    },{
+        "id": 33,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 34,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    },{
+        "id": 35,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 36,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Terong",
+        "price": 13300,
+        "image": "images/terong.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Cabai",
+        "price": 76000,
+        "image": "images/cabai.jpg"
+    },{
+        "id": 39,
+        "name": "Sayur Tauge",
+        "price": 17000,
+        "image": "images/tauge.jpg"
+    },{
+        "id": 40,
+        "name": "Timun",
+        "price": 13950,
+        "image": "images/timun.jpg"
+    },{
+        "id": 41,
+        "name": "Wortel",
+        "price": 14000,
+        "image": "images/wortel.jpg"
+    },{
+        "id": 42,
+        "name": "Kol",
+        "price": 10000,
+        "image": "images/kol.jpg"
+    }
+]
