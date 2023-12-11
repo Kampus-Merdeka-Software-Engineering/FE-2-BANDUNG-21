@@ -68,7 +68,7 @@ function addDataToHTML() {
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <div class="price">Rp.${product.price}/KG</div>
+                <div class="price">Rp.${product.price}</div>
                 <button onclick="addCart(${product.id})">masukan keranjang</button>
                 </div>
             `;
@@ -129,7 +129,7 @@ function addCartToHTML(){
                 `<img src="${product.image}" >
                 <div class="content">
                     <div class="name">${product.name}</div>
-                    <div class="price">Rp.${product.price}/1 product</div>
+                    <div class="price">Rp.${product.price}</div>
                 </div>
                 <div class="quantity">
                     <button onclick="changeQuantity(${product.id}, '-')">-</button>
