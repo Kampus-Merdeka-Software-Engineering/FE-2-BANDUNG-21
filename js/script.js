@@ -22,7 +22,7 @@ close.addEventListener('click', ()=>{
 
 let products = null;
 //get data from file json
-fetch('http://localhost:3000/Product/')
+fetch('js/product.json')
 .then(response => response.json())
 .then(data => {
     products = data;
@@ -59,8 +59,8 @@ function addDataToHTML() {
                 <div class="icons">
                     <a href="#" class="fas fa-share"></a>
                 </div>
-                <img src="${product.imageURL}" >
-                <h3>${product.product_name}</h3>
+                <img src="${product.image}" >
+                <h3>${product.name}</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -68,7 +68,7 @@ function addDataToHTML() {
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <div class="price"> ${product.price} <span> ${product.discounted_price}</span></div>
+                <div class="price">Rp.${product.price2}</div>
                 <button onclick="addCart(${product.id})">masukan keranjang</button>
                 </div>
             `;
@@ -126,9 +126,9 @@ function addCartToHTML(){
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
                 newCart.innerHTML =
-                `<img src="${product.imageURL}" >
+                `<img src="${product.image}" >
                 <div class="content">
-                    <div class="name">${product.product_name}</div>
+                    <div class="name">${product.name}</div>
                     <div class="price">Rp.${product.price}</div>
                 </div>
                 <div class="quantity">

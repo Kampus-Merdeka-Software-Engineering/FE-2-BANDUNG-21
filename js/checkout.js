@@ -1,25 +1,14 @@
 let listCart = [];
 //get data cart form cookie
 
-// Mendapatkan data cart dari API
-async function fetchCartData() {
-    try {
-      const response = await fetch('http://localhost:3000/Product/');
-      const data = await response.json();
-  
-      // Setelah mendapatkan data, kita bisa memuatnya ke dalam array listCart
-      listCart = data;
-  
-      // Menjalankan fungsi untuk menampilkan data ke HTML atau melakukan operasi lainnya
-      addCartToHTML();
-    } catch (error) {
-      console.error('Error fetching cart data:', error);
+function checkCart(){
+    var cookieValue = document.cookie
+    .split(';')
+    .find(row => row.startsWith('listCart='));
+    if(cookieValue){
+        listCart = JSON.parse(cookieValue.split('=')[1]);
     }
-  }
-  
-  // Memanggil fungsi fetchCartData saat halaman dimuat
-  document.addEventListener('DOMContentLoaded', fetchCartData);
-  
+}
 checkCart();
 addCartToHTML();
 function addCartToHTML(){
@@ -39,9 +28,9 @@ function addCartToHTML(){
                 let newP = document.createElement('div');
                 newP.classList.add('item');
                 newP.innerHTML = 
-                `<img src="${product.imageURL}" alt="">
+                `<img src="${product.image}" alt="">
                 <div class="info">
-                    <div class="name">${product.product_name}</div>
+                    <div class="name">${product.name}</div>
                     <div class="price">Rp.${product.price} </div>
                 </div>
                 <div class="quantity">${product.quantity}</div>
