@@ -2,128 +2,152 @@
     {
         "id": 1,
         "name": "Terong",
-        "price": "13.300/Kg",
+        "price": 13300,
+        "price2": "13.300/Kg",
         "image": "images/terong.jpg"
     },
     {
         "id": 2,
         "name": "Cabai",
-        "price": "76.000/Kg",
+        "price": 76000,
+        "price2": "76.000/Kg",
         "image": "images/cabai.jpg"
     },{
         "id": 3,
         "name": "Kol",
-        "price": "10.000/Kg",
+        "price": 10000,
+        "price2": "10.000/Kg",
         "image": "images/kol.jpg"
     },{
         "id": 4,
         "name": "Sayur Tauge",
-        "price": "17.000/Kg",
+        "price": 17000,
+        "price2": "17.000/Kg",
         "image": "images/tauge.jpg"
     },{
         "id": 5,
         "name": "Timun",
-        "price": "13.000/Kg",
+        "price": 14000,
+        "price2": "14.000/Kg",
         "image": "images/timun.jpg"
     },{
         "id": 6,
         "name": "Wortel",
-        "price": "14.000/Kg",
+        "price": 14000,
+        "price2": "14.000/Kg",
         "image": "images/wortel.jpg"
     },
     {
         "id": 7,
         "name": "Infused Water",
-        "price": "48.750/Liter",
+        "price": 48750,
+        "price2": "48.750/Liter",
         "image": "images/infused water.jpg"
     },
     {
         "id": 8,
         "name": "Jus Jambu",
-        "price": "13.500/Liter",
+        "price": 13500,
+        "price2": "13.500/Liter",
         "image": "images/jus jambu.jpg"
     },{
         "id": 9,
         "name": "Oatmilk",
-        "price": "27.500/Liter",
+        "price": 27000,
+        "price2": "27.000/Liter",
         "image": "images/oatmilk.jpg"
     },{
         "id": 10,
         "name": "Jus Alpukat",
-        "price": "14.400/Liter",
+        "price": 14400,
+        "price2": "14.400/Liter",
         "image": "images/jus alpukat.jpg"
     },{
         "id": 11,
         "name": "Susu Sapi",
-        "price": "19.950/Liter",
+        "price": 19950,
+        "price2": "19.950/Liter",
         "image": "images/susu sapi.jpg"
     },{
         "id": 12,
         "name": "Susu Kedelai",
-        "price": "26.000/Liter",
+        "price": 16000,
+        "price2": "16.000/Liter",
         "image": "images/susu kedelai.jpg"
     }, {
         "id": 13,
         "name": "Daging Sapi",
-        "price": "101.000/Kg",
+        "price": 101000,
+        "price2": "101.000/Kg",
         "image": "images/daging sapi.jpg"
     },
     {
         "id": 14,
         "name": "Ikan Salmon",
-        "price": "17.8500/Kg",
+        "price": 178500,
+        "price2": "178.500/Kg",
         "image": "images/ikan salmon.jpg"
     },{
         "id": 15,
         "name": "Daging Ayam",
-        "price": "38.000/Kg",
+        "price": 38000,
+        "price2": "38.000/Kg",
         "image": "images/ayam.jpg"
     },{
         "id": 16,
         "name": "Ikan Tuna",
-        "price": "56.000/Kg",
+        "price": 56000,
+        "price2": "56.000/Kg",
         "image": "images/tuna.jpg"
     },{
         "id": 17,
         "name": "Udang",
-        "price": "45.000/Kg",
+        "price": 45000,
+        "price2": "45.000/Kg",
         "image": "images/udang.jpg"
     },
     {
         "id": 18,
         "name": "Cumi-Cumi",
-        "price": "84.000/Kg",
+        "price": 84000,
+        "price2": "84.000/Kg",
         "image": "images/cumi-cumi.jpg"
     },
     {
         "id": 19,
         "name": "Mangga",
-        "price": "18.500/Kg",
+        "price": 18500,
+        "price2": "18.500/Kg",
         "image": "images/mangga.png"
     },{
         "id": 20,
         "name": "Apel",
-        "price": "46.600/Kg",
+        "price": 46600,
+        "price2": "46.600/Kg",
         "image": "images/apel.jpg"
     },{
         "id": 21,
         "name": "Durian",
-        "price": "125.500/Kg",
+        "price": 125500,
+        "price2": "125.500/Kg",
         "image": "images/durian.jpg"
     },{
         "id": 22,
         "name": "Anggur",
-        "price": "38.500/Kg",
+        "price": 38500,
+        "price2": "38.500/Kg",
         "image": "images/anggur.jpg"
     },{
         "id": 23,
         "name": "Pisang",
-        "price": "31.500/Kg",
+        "price": 31500,
+        "price2": "31.500/Kg",
         "image": "images/pisang.jpg"
     },{
         "id": 24,
         "name": "Buah Naga",
-        "price": "33.500/Kg",
+        "price": 33500,
+        "price2": "33.500/Kg",
         "image": "images/buah naga.jpg"
     }
 ]

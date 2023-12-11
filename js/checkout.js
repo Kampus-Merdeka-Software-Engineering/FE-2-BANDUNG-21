@@ -45,3 +45,4 @@ function addCartToHTML(){
     totalQuantityHTML.innerText = totalQuantity;
     totalPriceHTML.innerText = 'Rp' + totalPrice;
 }
+

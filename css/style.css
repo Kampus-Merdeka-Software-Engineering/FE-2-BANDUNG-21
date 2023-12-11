@@ -405,12 +405,14 @@ object-fit: cover;
   right: 0;
   width: 400px;
   height: 100vh;
-  background-color: #fff;
+  background-color: #ffffff;
   display: grid;
   grid-template-rows: 50px 1fr 50px;
   gap: 20px;
   transition: right 1s;
   z-index: 1000;
+  border-radius: 10%;
+
   
 }
 
@@ -643,6 +645,9 @@ object-fit: cover;
   border-radius: 20px;
   padding: 20px;
   color: #fff;
+  width: 700px ;
+  height: 600px ;
+  box-sizing: border-box;
 }
 .checkoutLayout .list img{
   height: 70px;
@@ -809,6 +814,7 @@ object-fit: cover;
   .tentang {
     padding: 1em 7em;
   }
+
 }
 @media screen and (min-width: 992px) {
   .tentang {
@@ -840,7 +846,48 @@ object-fit: cover;
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .checkoutLayout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .checkoutLayout .right {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .checkoutLayout .list img {
+    height: 50px; /* Sesuaikan ukuran gambar pada layar kecil */
+  }
+
+  .checkoutLayout .right .form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .checkoutLayout .form .group:nth-child(-n+3) {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  .checkoutLayout .form input,
+  .checkoutLayout .form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .checkoutLayout .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .checkoutLayout .row div:nth-child(2) {
+    margin-top: 10px;
+  }
 }
+
 
 
 
