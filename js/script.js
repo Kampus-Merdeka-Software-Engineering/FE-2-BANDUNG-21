@@ -30,36 +30,50 @@ fetch('js/product.json')
 })
 
 //Show datas in list html
-function addDataToHTML(){
-    //remove datas default in html
+function addDataToHTML() {
     let productHTML = document.querySelector('.product');
     productHTML.innerHTML = '';
 
-    //add new datas
-    if(products != null){
-        products.forEach(product => {
+     // Membuat judul utama
+     let mainHeading = document.createElement('h1');
+     mainHeading.classList.add('heading');
+     mainHeading.innerHTML = 'Berdasarkan <span>Menu</span>';
+     productHTML.appendChild(mainHeading);
+
+    if (products != null) {
+        let rowContainer; 
+
+        products.forEach((product, index) => {
+
+            if (index % 3 === 0) {
+                rowContainer = document.createElement('div');
+                rowContainer.classList.add('row-container'); 
+                productHTML.appendChild(rowContainer);
+            }
+
             let newProduct = document.createElement('div');
             newProduct.classList.add('box-container');
-            newProduct.innerHTML =
-            ` <div class="box">
-            <span class="discount">-30%</span>
-            <div class="icons">
-                <a href="#" class="fas fa-share"></a>
-            </div>
-            <img src="${product.image}" >
-            <h3>${product.name}</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="price">Rp.${product.price}/KG</div>
-            <button onclick="addCart(${product.id})">masukan keranjang</button>
-        </div>
-        `;
-            productHTML.appendChild(newProduct);
+            newProduct.innerHTML = `
+                <div class="box">
+                <span class="discount">-30%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <img src="${product.image}" >
+                <h3>${product.name}</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rp.${product.price}/KG</div>
+                <button onclick="addCart(${product.id})">masukan keranjang</button>
+                </div>
+            `;
+
+            rowContainer.appendChild(newProduct); 
         });
     }
 }
