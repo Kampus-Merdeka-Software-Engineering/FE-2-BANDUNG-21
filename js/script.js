@@ -5,6 +5,8 @@ let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let product = document.querySelector('.product');
 let close = document.querySelector('.close');
+let buttonSave = document.getElementById('btnSave');
+let tes = []
 
 iconCart.addEventListener('click', ()=>{
     if(cart.style.right == '-100%'){
@@ -22,7 +24,7 @@ close.addEventListener('click', ()=>{
 
 let products = null;
 //get data from file json
-fetch('js/product.json')
+fetch('https://be-2-bandung-21-production.up.railway.app/product')
 .then(response => response.json())
 .then(data => {
     products = data;
@@ -59,8 +61,8 @@ function addDataToHTML() {
                 <div class="icons">
                     <a href="#" class="fas fa-share"></a>
                 </div>
-                <img src="${product.image}" >
-                <h3>${product.name}</h3>
+                <img src="${product.imageURL}" >
+                <h3>${product.product_name}</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -68,7 +70,7 @@ function addDataToHTML() {
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <div class="price">Rp.${product.price2}</div>
+                <div class="price">Rp.${product.discounted_price}</div>
                 <button onclick="addCart(${product.id})">masukan keranjang</button>
                 </div>
             `;
@@ -126,10 +128,10 @@ function addCartToHTML(){
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
                 newCart.innerHTML =
-                `<img src="${product.image}" >
+                `<img src="${product.imageURL}" >
                 <div class="content">
-                    <div class="name">${product.name}</div>
-                    <div class="price">Rp.${product.price}</div>
+                    <div class="name">${product.product_name}</div>
+                    <div class="price">Rp.${product.discounted_price}</div>
                 </div>
                 <div class="quantity">
                     <button onclick="changeQuantity(${product.id}, '-')">-</button>
@@ -184,3 +186,65 @@ window.onscroll = () => {
     }
     
 }
+
+buttonSave.addEventListener('click', async(e) => {
+    e.preventDefault();
+    let nama = $('#nama').val();
+    let email = $('#email').val();
+    let telpon = $('#telpon').val();
+    let pesan = $('#pesan').val();
+
+    if(nama === '') {
+        Swal.fire({
+            title: 'Gagal!',
+            text: 'Nama tidak boleh kosong!',
+            icon: 'error'
+        })
+    }else if(email === '') {
+        Swal.fire({
+            title: 'Gagal!',
+            text: 'Email tidak boleh kosong!',
+            icon: 'error'
+        })
+    }else if(telpon === '') {
+        Swal.fire({
+            title: 'Gagal!',
+            text: 'No Telpon tidak boleh kosong!',
+            icon: 'error'
+        })
+    }else if(pesan === '') {
+        Swal.fire({
+            title: 'Gagal!',
+            text: 'Pesan tidak boleh kosong!',
+            icon: 'error'
+        })
+    }else{
+        try {
+            const response = await fetch('https://be-2-bandung-21-production.up.railway.app/Kontak',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                },
+                body: JSON.stringify({
+                    nama: nama,
+                    email: email,
+                    telpon: telpon,
+                    pesan: pesan
+                })
+            })
+
+            if(response.status === 201){
+                Swal.fire({
+                    title: 'Berhasil!',
+                    text: 'Pesan anda berhasil dikirim!',
+                    icon: 'success'
+                }).then((result) => {
+                    window.location.href = 'index.html'
+                })
+            }
+        } catch (error) {
+            
+        }
+    }
+})

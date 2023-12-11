@@ -374,22 +374,20 @@
 
     <h1 class="heading"> <span>kontak</span> kami </h1>
 
-    <form action="">
 
         <div class="inputBox">
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Nama" name="nama" id="nama">
+            <input type="email" placeholder="Email" name="email" id="email">
         </div>
 
         <div class="inputBox">
-            <input type="" placeholder="Telepon">
+            <input type="number" placeholder="Telepon" name="telpon" id="telpon">
         </div>
 
-        <textarea placeholder="pesan" name="" id="" cols="30" rows="10" class="pesan"></textarea>
+        <textarea placeholder="pesan" name="pesan" id="pesan" cols="30" rows="10" class="pesan"></textarea>
 
-        <input type="submit" value="send message" class="btn">
+        <button type="button" class="btn" id="btnSave"> Kirim Pesan </button>
 
-    </form>
 </section>
 
 <!-- contact section ends -->
@@ -469,7 +467,9 @@
 
 
    <!-- custom js file link --> 
-   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="js/script.js"></script>
 </body>
 </html>
